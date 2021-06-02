@@ -9,6 +9,8 @@ public class Student {
     double ratingEconomica;
     double ratingEnglish;
     String items;
+    int nomerscheta;
+    int balans = 200;
 
     public Student (String studentName, String studentFamaly, int numberStudentBilet, double ratingMatematica, double ratingEconomica, double ratingEnglish, int earsLesson){
 
@@ -22,9 +24,19 @@ public class Student {
 
     }
 
+    public void popolnenie (int a){
+        balans = balans + a;
+        System.out.println("Баланс счета студента после пополнения: " + balans + " руб.");
+    }
+
+    public void snyatie (int a){
+        balans = balans - a;
+        System.out.println("Баланс счета студента после снятия: " + balans + " руб.");
+    }
+
     public Student (){
 
-        }
+    }
 
     double rating (){
         //System.out.println(rating());
